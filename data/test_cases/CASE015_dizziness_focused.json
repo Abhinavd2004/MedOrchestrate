@@ -1,0 +1,9 @@
+{
+  "case_id": "CASE015_dizziness_focused",
+  "patient": { "age": 57, "sex": "male" },
+  "clinical_text": "brief episodes of spinning vertigo triggered by rolling over in bed, lasting under a minute, no headache",
+  "medical_report": null,
+  "image_path": null,
+  "labs": {},
+  "history": []
+}

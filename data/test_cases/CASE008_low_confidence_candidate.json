@@ -1,0 +1,9 @@
+{
+  "case_id": "CASE008_low_confidence_candidate",
+  "patient": { "age": 34, "sex": "female" },
+  "clinical_text": "feeling generally unwell for a few days, mild fatigue, occasional lightheadedness, nothing specific",
+  "medical_report": null,
+  "image_path": null,
+  "labs": {},
+  "history": []
+}

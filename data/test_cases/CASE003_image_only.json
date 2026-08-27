@@ -1,0 +1,9 @@
+{
+  "case_id": "CASE003_image_only",
+  "patient": { "age": 60, "sex": "female" },
+  "clinical_text": null,
+  "medical_report": null,
+  "image_path": "data/images/synthetic_demo_brain_mri_001.png",
+  "labs": {},
+  "history": []
+}

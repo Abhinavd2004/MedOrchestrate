@@ -1,0 +1,9 @@
+{
+  "case_id": "CASE013_minimal_no_content",
+  "patient": { "age": 40, "sex": "other" },
+  "clinical_text": null,
+  "medical_report": null,
+  "image_path": null,
+  "labs": {},
+  "history": []
+}

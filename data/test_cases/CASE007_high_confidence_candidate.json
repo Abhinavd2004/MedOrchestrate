@@ -1,0 +1,9 @@
+{
+  "case_id": "CASE007_high_confidence_candidate",
+  "patient": { "age": 63, "sex": "male" },
+  "clinical_text": "chronic headache and dizziness, longstanding poorly controlled hypertension, no other neurological symptoms",
+  "medical_report": null,
+  "image_path": null,
+  "labs": {},
+  "history": ["hypertension", "hyperlipidemia"]
+}

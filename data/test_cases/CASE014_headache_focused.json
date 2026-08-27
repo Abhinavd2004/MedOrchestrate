@@ -1,0 +1,9 @@
+{
+  "case_id": "CASE014_headache_focused",
+  "patient": { "age": 28, "sex": "female" },
+  "clinical_text": "throbbing unilateral headache with nausea and light sensitivity, lasting about a day, similar episodes in the past",
+  "medical_report": null,
+  "image_path": null,
+  "labs": {},
+  "history": ["migraine"]
+}

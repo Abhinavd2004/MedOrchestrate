@@ -1,0 +1,9 @@
+{
+  "case_id": "CASE005_text_and_medical_report",
+  "patient": { "age": 48, "sex": "male" },
+  "clinical_text": "headache and dizziness for two weeks",
+  "medical_report": "MRI brain report: no acute intracranial abnormality. Scattered punctate white matter hyperintensities, likely chronic small vessel disease.",
+  "image_path": null,
+  "labs": {},
+  "history": ["hypertension"]
+}

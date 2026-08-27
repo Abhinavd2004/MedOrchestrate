@@ -523,4 +523,10 @@ def run_case(case: CaseInput) -> FinalReport:
         review_required=context.review_required,
         conflicts=fusion.conflicts,
         iteration_count=context.iterations,
+        # False whenever live evidence gathering ran but came back empty
+        # (PubMed/MedlinePlus unreachable, or a genuinely empty result) --
+        # lets a report consumer tell "no live evidence was found" apart
+        # from "we never even tried", without silently presenting an
+        # offline-only differential as if live evidence had corroborated it.
+        live_evidence_available=bool(context.live and context.live.sources),
     )

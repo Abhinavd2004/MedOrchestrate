@@ -1,0 +1,9 @@
+{
+  "case_id": "CASE011_with_labs",
+  "patient": { "age": 39, "sex": "female" },
+  "clinical_text": "fatigue and dizziness, especially on standing, mild headache",
+  "medical_report": null,
+  "image_path": null,
+  "labs": { "hemoglobin": "10.2 g/dL", "hematocrit": "31%" },
+  "history": ["iron deficiency anemia"]
+}

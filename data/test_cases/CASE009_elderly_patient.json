@@ -1,0 +1,9 @@
+{
+  "case_id": "CASE009_elderly_patient",
+  "patient": { "age": 81, "sex": "male" },
+  "clinical_text": "gradual gait unsteadiness and mild headache over several weeks, on warfarin, history of a fall two months ago",
+  "medical_report": null,
+  "image_path": null,
+  "labs": {},
+  "history": ["hypertension", "atrial fibrillation", "on anticoagulation"]
+}

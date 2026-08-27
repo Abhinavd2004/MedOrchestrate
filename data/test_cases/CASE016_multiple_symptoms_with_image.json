@@ -1,0 +1,9 @@
+{
+  "case_id": "CASE016_multiple_symptoms_with_image",
+  "patient": { "age": 66, "sex": "female" },
+  "clinical_text": "headache, dizziness, and mild gait unsteadiness over the past month, history of hypertension and hyperlipidemia",
+  "medical_report": null,
+  "image_path": "data/images/synthetic_demo_brain_mri_001.png",
+  "labs": {},
+  "history": ["hypertension", "hyperlipidemia"]
+}

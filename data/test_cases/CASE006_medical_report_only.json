@@ -1,0 +1,9 @@
+{
+  "case_id": "CASE006_medical_report_only",
+  "patient": { "age": 55, "sex": "female" },
+  "clinical_text": null,
+  "medical_report": "MRI brain report: mild diffuse white matter hyperintensities consistent with chronic small vessel ischemic disease. No acute findings.",
+  "image_path": null,
+  "labs": {},
+  "history": []
+}

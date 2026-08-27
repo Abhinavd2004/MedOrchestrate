@@ -16,6 +16,7 @@ from pathlib import Path
 from fastapi import APIRouter, File, Form, HTTPException, UploadFile
 from pydantic import ValidationError
 
+from backend.agents.imaging_agent import ALLOWED_EXTENSIONS
 from backend.api.schemas import ReviewRequest, ReviewResponse
 from backend.models.schemas import CaseInput, FinalReport, Patient
 from backend.services import storage
@@ -81,6 +82,21 @@ def diagnose(
 
     image_path: str | None = None
     if image is not None and image.filename:
+        suffix = Path(image.filename).suffix.lower()
+        if suffix not in ALLOWED_EXTENSIONS:
+            # A validation error (422), not a 500 -- this is a malformed
+            # request, not a server failure. imaging_agent.analyze_image()
+            # has its own extension/content check too, but that one only
+            # ever produces a *graceful degradation* (no imaging findings,
+            # request still succeeds) since it runs deep inside run_case()
+            # where failures are intentionally absorbed. Rejecting an
+            # obviously-wrong file type here, before we even attempt to
+            # process the case, gives the caller a clear, immediate signal
+            # instead of a silently-degraded report.
+            raise HTTPException(
+                status_code=422,
+                detail=f"Unsupported image file extension '{suffix}'. Supported: {sorted(ALLOWED_EXTENSIONS)}",
+            )
         try:
             image_path = _save_uploaded_image(resolved_case_id, image)
         except Exception as exc:

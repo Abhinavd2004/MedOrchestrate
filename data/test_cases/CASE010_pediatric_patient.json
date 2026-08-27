@@ -1,0 +1,9 @@
+{
+  "case_id": "CASE010_pediatric_patient",
+  "patient": { "age": 9, "sex": "female" },
+  "clinical_text": "headache for two days, recent upper respiratory infection, no fever currently",
+  "medical_report": null,
+  "image_path": null,
+  "labs": {},
+  "history": []
+}

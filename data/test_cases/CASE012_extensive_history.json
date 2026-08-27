@@ -1,0 +1,9 @@
+{
+  "case_id": "CASE012_extensive_history",
+  "patient": { "age": 70, "sex": "male" },
+  "clinical_text": "worsening headache and dizziness over the past week",
+  "medical_report": null,
+  "image_path": null,
+  "labs": {},
+  "history": ["hypertension", "type 2 diabetes", "chronic kidney disease", "prior ischemic stroke", "hyperlipidemia"]
+}

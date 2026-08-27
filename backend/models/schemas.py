@@ -73,3 +73,4 @@ class FinalReport(BaseModel):
     review_required: bool
     conflicts: list[str] = []
     iteration_count: int = 0
+    live_evidence_available: bool = True
