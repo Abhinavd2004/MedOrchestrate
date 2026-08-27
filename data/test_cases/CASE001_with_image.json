@@ -1,0 +1,12 @@
+{
+  "case_id": "CASE001",
+  "patient": {
+    "age": 45,
+    "sex": "male"
+  },
+  "clinical_text": "headache and dizziness, history of hypertension",
+  "medical_report": null,
+  "image_path": "data/images/synthetic_demo_brain_mri_001.png",
+  "labs": {},
+  "history": ["hypertension"]
+}

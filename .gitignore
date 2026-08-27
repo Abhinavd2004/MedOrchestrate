@@ -1,0 +1,40 @@
+# Python
+venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+*.db
+
+# Local embedded Qdrant storage (fallback when QDRANT_URL is unset)
+data/qdrant_local/
+
+# Rotating structured log file (backend/services/logging.py)
+logs/
+
+# Env
+.env
+
+# Node
+node_modules/
+
+# Frontend build
+frontend/dist/
+frontend/build/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+
+# User-uploaded images from POST /diagnose (runtime artifact, not source)
+data/images/uploads/
+
+# Stray install logs
+install.log
+pip-log.txt
+
+# Claude Code session-local state (not project source)
+.claude/*.lock
