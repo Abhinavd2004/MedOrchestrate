@@ -11,6 +11,11 @@ data/qdrant_local/
 # Rotating structured log file (backend/services/logging.py)
 logs/
 
+# Generated evaluation reports (backend/tests/run_evaluation.py) --
+# a point-in-time snapshot of one run, not source. Re-run to regenerate.
+backend/tests/evaluation_report.md
+backend/tests/evaluation_report.csv
+
 # Env
 .env
 
